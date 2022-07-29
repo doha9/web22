@@ -28,4 +28,33 @@ print arsort($age)."<br>";
 print asort($age)."<br>";
 print krsort($age)."<br>";
 
+
+$t = 20;
+if ($t < "10") {
+  echo "10";
+} elseif ($t < "20") {
+  echo "20";
+}elseif ($t < "30") {
+  echo "30";
+} else {
+  echo "NoOne";
+}
+
+echo"<br>";
+
+$t = 20;
+switch ($t) {
+  case "10":
+    echo " 10!";
+    break;
+  case "20":
+    echo "20!";
+    break;
+  case "30":
+    echo " 30!";
+    break;
+  default:
+    echo "NoOne!";
+}
+
 ?>
