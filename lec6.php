@@ -12,15 +12,7 @@ function factorial_of_a_number($n)
 	}
 print_r(factorial_of_a_number(4)."\n");
 
-
-
-
-
-
-echo"<br>";echo"<br>";echo"<br>";
-
-
-
+echo"<br>";
 
 function check_palindrome($string) 
 {
@@ -29,12 +21,11 @@ function check_palindrome($string)
   else
   echo "notpalindrome";
 }
-echo check_palindrome('pop')."<br>";
+echo check_palindrome('pop')."\n";
 echo check_palindrome('madam')."<br>";
 echo check_palindrome('meme')."<br>";
 
-echo"<br>";echo"<br>";echo"<br>";
-
+echo"<br>";
 
 
 
