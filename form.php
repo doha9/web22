@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-<form action="action.php" method="get">
+<form action="#" method="get">
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -24,6 +24,25 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+<?php
+if($_SERVER['REQEST_METHOD']=='post'){/*
+$email=$_post['email'];
+$password=$_post['password'];
+if(isset($_POST['agree'])){
+    $agree=true;
+}else{ $agree=false;}
+
+*/
+if(isset($_POST['email'])&& isset($_POST['password'])){
+  $email=$_post['email'];
+  $password=$_post['password'];
+if(empty($email)&&empty($password))
+if(filter_var($email,FILTER_VALIDATE_EMAIL)){}
+}
+
+}
+?>
 <?php  include 'js.php'?> 
 </body>
 </html>
